@@ -1,8 +1,8 @@
-
+require('dotenv').config()
 const Xendit = require('xendit-node');
 
 const x = new Xendit({
-  secretKey: '***INSERT_YOUR_SECRET_KEY_HERE***
+  secretKey: process.env.SECRET_KEY,
 });
 
 module.exports = x
